@@ -14,6 +14,12 @@ class ViewController: UIViewController {
     var secondString = "The background color will turn to green"
     
     
+    @IBOutlet weak var Label1: UILabel!
+    
+    @IBOutlet weak var Label2: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,11 +33,15 @@ class ViewController: UIViewController {
         {
             //if block
             self.view.backgroundColor = UIColor.red
+            
+           self.Label1.textColor = UIColor.red
         }
         else //else block is executed because the conditional statement evaluates to false
         {
             //else block
             self.view.backgroundColor = UIColor.blue
+            
+            self.Label2.textColor = UIColor.blue
         }
     }
     
