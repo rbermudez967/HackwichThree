@@ -12,13 +12,15 @@ class ViewController: UIViewController {
 
     var firstString = "The background color will turn to blue"
     var secondString = "The background color will turn to green"
-    
+    var magicOne = "Hocus Pocus"
+    var magicTwo = "Hocus Pocus"
     
     @IBOutlet weak var Label1: UILabel!
     
     @IBOutlet weak var Label2: UILabel!
     
     
+    @IBOutlet weak var Label3: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +47,24 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func changeColorMagically(_ sender: Any)
+    {
+    
+    if magicOne == magicTwo
+    {
+        self.view.backgroundColor = UIColor.green
+        self.Label3.textColor = UIColor.green
+        
+        }
+        
+        else
+    {
+        self.view.backgroundColor = UIColor.red
+        
+        }
+        
+        print ("I completed both problem sets")
+    }
     
 }
 
