@@ -36,14 +36,14 @@ class ViewController: UIViewController {
             //if block
             self.view.backgroundColor = UIColor.red
             
-           self.Label1.textColor = UIColor.red
+           self.Label1.text = "Red"
         }
         else //else block is executed because the conditional statement evaluates to false
         {
             //else block
             self.view.backgroundColor = UIColor.blue
             
-            self.Label2.textColor = UIColor.blue
+            self.Label2.text = "Blue"
         }
     }
     
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         
         else
     {
-        self.view.backgroundColor = UIColor.red
+                self.view.backgroundColor = UIColor.red
         
         }
         
